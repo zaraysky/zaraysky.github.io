@@ -1,24 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Главная</title>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Мой блог</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-  <h1><a href="">Zaraysky | Статьи</a></h1>
-  <p>Про ИТ и не только...</p>
-</header>
-  <main>
-    <h1>Статьи</h1>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="site-title">Мой блог</a>
+      <nav class="site-nav">
+        <a href="/">Статьи</a>
+        <a href="/about">Обо мне</a>
+      </nav>
+    </header>
 
-<ul>
+    <main>
+      <div class="intro">
+  <p>Лаконичный блог о разработке, дизайне и всём остальном.</p>
+</div>
+
+<section class="posts-list">
+  <h2 class="section-title">Все статьи</h2>
+
   
-</ul>
-  </main>
-  <footer>
-  <p>© 2026 Zaraysky | Статьи</p>
-</footer>
+    <article class="post-preview">
+      <div class="post-preview-meta">
+        <time datetime="2026-08-16T00:00:00+03:00">16 Aug 2026</time>
+      </div>
+      <h3 class="post-preview-title">
+        <a href="/2026/08/16/kak-ya-nachal-pisat/">Как я начал писать этот блог</a>
+      </h3>
+      
+        <div class="post-preview-tags">
+          
+            <span class="tag">jekyll</span>
+          
+            <span class="tag">markdown</span>
+          
+        </div>
+      
+      
+        <p class="post-preview-description">Первый пост о том, почему я решил завести личный сайт и что планирую здесь публиковать.</p>
+      
+    </article>
+  
+    <article class="post-preview">
+      <div class="post-preview-meta">
+        <time datetime="2026-08-10T00:00:00+03:00">10 Aug 2026</time>
+      </div>
+      <h3 class="post-preview-title">
+        <a href="/2026/08/10/vtoraya-statya/">Вторая статья для примера</a>
+      </h3>
+      
+        <div class="post-preview-tags">
+          
+            <span class="tag">дизайн</span>
+          
+            <span class="tag">инструменты</span>
+          
+        </div>
+      
+      
+        <p class="post-preview-description">Пример статьи, чтобы показать, как выглядит список с несколькими записями.</p>
+      
+    </article>
+  
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ваше Имя</p>
+    </footer>
+  </div>
 </body>
 </html>

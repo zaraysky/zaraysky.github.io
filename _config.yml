@@ -1,6 +1,24 @@
-title: "Zaraysky | Статьи"
-description: "Про ИТ и не только..."
-baseurl: "" # если это имя.github.io
-url: "https://zaraysky.github.io"
+title: "Мой блог"
+description: >-
+  Лаконичный блог о разработке, дизайне и всём остальном.
+baseurl: ""
+url: "https://username.github.io"
+author: "Ваше Имя"
+
 markdown: kramdown
-permalink: /:title/
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
