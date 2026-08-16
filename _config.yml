@@ -1,0 +1,6 @@
+title: "Zaraysky | Статьи"
+description: "Про ИТ и не только..."
+baseurl: "" # если это имя.github.io
+url: "https://zaraysky.github.io"
+markdown: kramdown
+permalink: /:title/
