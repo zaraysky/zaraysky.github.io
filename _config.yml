@@ -1,8 +1,8 @@
-title: "Мой блог"
+title: "Узнал и поделился"
 description: >-
-  Лаконичный блог о разработке, дизайне и всём остальном.
+  Когда хочется рассказать о том, что я узнал или научился делать.
 baseurl: ""
-url: "https://username.github.io"
+url: "https://zaraysky.github.io"
 author: "Ваше Имя"
 
 markdown: kramdown
