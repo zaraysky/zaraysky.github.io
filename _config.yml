@@ -3,7 +3,7 @@ description: >-
   Когда хочется рассказать о том, что я узнал или научился делать.
 baseurl: ""
 url: "https://zaraysky.github.io"
-author: "Ваше Имя"
+author: "Alexander Zaraysky"
 
 markdown: kramdown
 highlighter: rouge
