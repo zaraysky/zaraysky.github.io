@@ -4,9 +4,13 @@ description: >-
 baseurl: ""
 url: "https://zaraysky.github.io"
 author: "Alexander Zaraysky"
+github_username: "zaraysky"
 
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
 
 plugins:
   - jekyll-feed

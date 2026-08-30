@@ -1,33 +1,32 @@
 ---
 layout: default
-title: ""
 ---
 
-<div class="intro">
-  <p>{{ site.description }}</p>
-</div>
+<section class="hero">
+  <h1 class="hero-title">Узнал — и поделился</h1>
+  <p class="hero-sub">{{ site.description }}</p>
+</section>
 
-<section class="posts-list">
-  <h2 class="section-title">Все статьи</h2>
-
+<h2 class="section-title">Все статьи</h2>
+<ul class="post-list">
   {% for post in site.posts %}
-    <article class="post-preview">
-      <div class="post-preview-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
+    <li class="post-item">
+      <div class="post-meta">
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{% include ru_date.html date=post.date %}</time>
       </div>
-      <h3 class="post-preview-title">
+      <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h3>
-      {% if post.tags.size > 0 %}
-        <div class="post-preview-tags">
+      {% if post.tags and post.tags.size > 0 %}
+        <div class="tags">
           {% for tag in post.tags %}
             <span class="tag">{{ tag }}</span>
           {% endfor %}
         </div>
       {% endif %}
       {% if post.description %}
-        <p class="post-preview-description">{{ post.description }}</p>
+        <p class="post-desc">{{ post.description }}</p>
       {% endif %}
-    </article>
+    </li>
   {% endfor %}
-</section>
+</ul>

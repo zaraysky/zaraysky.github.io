@@ -1,0 +1,7 @@
+{%- comment -%}
+  Форматирует дату по-русски: «17 августа 2026».
+  Использование: {% include ru_date.html date=page.date %}
+{%- endcomment -%}
+{%- assign months = "января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря" | split: "," -%}
+{%- assign month_index = include.date | date: "%m" | minus: 1 -%}
+{{- include.date | date: "%-d" }} {{ months[month_index] }} {{ include.date | date: "%Y" -}}

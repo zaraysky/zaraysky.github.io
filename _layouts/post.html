@@ -2,26 +2,23 @@
 layout: default
 ---
 
-<article class="post">
+<article>
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <a class="back-link" href="{{ '/' | relative_url }}">&larr; Все статьи</a>
+    <h1>{{ page.title }}</h1>
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y' }}</time>
-      {% if page.tags.size > 0 %}
-        <span class="post-tags">
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% include ru_date.html date=page.date %}</time>
+      {% if page.tags and page.tags.size > 0 %}
+        <div class="tags">
           {% for tag in page.tags %}
             <span class="tag">{{ tag }}</span>
           {% endfor %}
-        </span>
+        </div>
       {% endif %}
     </div>
   </header>
 
-  <div class="post-content">
+  <div class="prose">
     {{ content }}
   </div>
-
-  <footer class="post-footer">
-    <a href="{{ '/' | relative_url }}" class="back-link">← На главную</a>
-  </footer>
 </article>
