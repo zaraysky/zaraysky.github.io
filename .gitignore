@@ -6,3 +6,4 @@ vendor
 .bundle
 .obsidian/
 .DS_Store
+*.patch
